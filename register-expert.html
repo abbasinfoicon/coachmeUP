@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="icon" href="assets/img/logo-icon.png" type="image/gif">
+
+    <title>CoachmeuUP | Register-expert</title>
+
+    <!--jquery.min-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--STYLE-SHEET-->
+    <link href="assets/stylesheet/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/stylesheet/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/stylesheet/animate.min.css" rel="stylesheet">
+    <link href="assets/stylesheet/bootstrap.min.css" rel="stylesheet">
+
+    <!--main-css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--========================= HEADER =============================-->
+<header>
+    <!--top-head-section-->
+    <div class="resister-first">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="index.html">
+                    <div class="resister-logo">
+                        <img src="assets/img/logo2.png">
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <div class="roket-resister peopleblub"><img src="assets/img/people-blub.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================= END-HEADER =============================-->
+<!--========================= inscriptionStartup =============================-->
+<div class="inscriptionStartup">
+    <div class="container">
+        <div class="inscription-content">
+            <h3>Inscription Expert</h3>
+            <p>Coachme_up va vous permettre de mettre votre réseau , vos conseils et votre expérience au service des
+                start up.<br>
+                <strong>Comment ?</strong> ...en contactant des start-up qui travaillent sur un sujet qui vous
+                passionne. En proposant votre expérience à des start-up ou jeune dirigeant. En accompagnant des start-up
+                comme advisor. Grace à vous ces jeunes poussent pourront peut être aller au bout de leur projet.
+                Inscrivez vous et nous vous guiderons sur la façon de faire bénéficier de votre réseau au plus grand
+                nombre
+            </p>
+        </div>
+    </div>
+</div>
+<div class="border-pic"></div>
+<!--========================= inscriptionStartup =============================-->
+
+<!--========================= resister-field =============================-->
+<div class="resister-field">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="right-numbring-page">
+                    <div class="inside-etape">
+                        <span>ÉTAPE</span><br>
+                        1/<strong>2</strong>
+                    </div>
+                </div>
+                <div class="champs-etape">* champs obligatoire</div>
+            </div>
+            <div class="col-md-7">
+                <div class="field-input">
+                    <div class="form-sec focus-placeholder">
+                        <form name="qryform" id="qryform" method="post" action="register-expert-2.html"
+                              onsubmit="return(validate());"
+                              novalidate="novalidate">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="">
+                                <label class="p-label">Nom *</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="lastname" placeholder=""
+                                       name="lastname">
+                                <label class="p-label">Prénom *</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="phone" placeholder=""
+                                       name="phone">
+                                <label class="p-label">Téléphone *</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder=""
+                                       name="email">
+                                <label class="p-label">Email *</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="date" placeholder=""
+                                       name="date">
+                                <label class="p-label">Mot de passe *</label>
+                                <span toggle="#password-field"
+                                      class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+
+                            <div class="form-group1">
+                                <div class="date-and-time first-field-select">
+                                    <div class="form-group field required-field field-text">
+                                        <input type="text" id="datepicker-13" class="form-control" value="" autocomplete="off">
+                                        <label class="p-label">Date de naissance *</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group textarea-group">
+                                <label>Description de votre profil *</label>
+                                <div class="count-caracteres caracteres-255">255 caractères</div>
+                                <textarea class="form-control caracteres-input" id="exampleFormControlTextarea1"
+                                          placeholder="" rows="10"></textarea>
+                            </div>
+
+                            <div class="form-group select-drop apporter apporter-default">
+                                <div class="openSelction-input">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <label class="p-label">Niveau de diplôme *</label>
+                                </div>
+                                <div class="openSelction-select">
+                                    <ul>
+                                        <li>
+                                            <div class="title-li">CAP, BEP</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Baccalauréat</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">DEUG, BTS, DUT, DEUST</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Licence, licence professionnelle</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Maîtrise, master 1</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Maîtrise, master 2</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Diplôme d'ingénieur</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Diplôme d'études supérieures</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Doctorat</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Autres</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <!--  <label>Phone No.:</label>-->
+                                <input type="text" class="form-control" placeholder=""
+                                       name="phone">
+                                <label class="p-label">Nom de votre entreprise *</label>
+                            </div>
+
+                            <div class="form-group keyboard-add">
+                                <input type="text" class="form-control" placeholder="" data-role="tagsinput">
+                                <label class="p-label">Fonction *</label>
+                            </div>
+
+                            <div class="form-group select-drop">
+                                <div class="openSelction-input">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <label class="p-label">Secteur d’activité *</label>
+                                </div>
+
+                                <div class="openSelction-select">
+                                    <div class="close-s">
+                                        <img src="assets/img/close-drop-form.png" alt="no-img">
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="title-li">Agroalimentaire</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Banque / Assurance</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Bois / Papier / Carton / Imprimerie</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">BTP / Matériaux de construction</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Chimie / Parachimie</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Commerce / Négoce / Distribution</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Édition / Communication / Multimédia</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Électronique / Électricité</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Études et conseils</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Industrie pharmaceutique</div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <div class="title-li">Informatique / Télécoms</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Machines et équipements / Automobile</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Métallurgie / Travail du métal</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Plastique / Caoutchouc</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Services aux entreprises</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Textile / Habillement / Chaussure</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Transports / Logistique</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">Autres</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group select-drop apporter apporter-default">
+                                <div class="openSelction-input">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <label class="p-label">Effectif *</label>
+                                </div>
+                                <div class="openSelction-select">
+                                    <ul>
+                                        <li>
+                                            <div class="title-li">10 - 50</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">50 - 100</div>
+                                        </li>
+                                        <li>
+                                            <div class="title-li">500 +</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <!--  <label>Phone No.:</label>-->
+                                <input type="text" class="form-control" id="location" placeholder=""
+                                       name="location">
+                                <label class="p-label">Adresse de votre entreprise *</label>
+                            </div>
+                            <div class="form-group lst">
+                                <!--  <label>Phone No.:</label>-->
+                                <input type="url" class="form-control" id="url-name" placeholder=""
+                                       name="url-name">
+                                <label class="p-label">URL de votre entreprise *</label>
+                            </div>
+                            <div class="button-suivante">
+                                <button type="submit" class="btn btn-default suivante">ÉTAPE SUIVANTE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--========================= resister-field =============================-->
+
+    <!--========================= FOOTER =============================-->
+    <footer>
+        <!--footer-menu-->
+        <div class="footer-menu">
+            <div class="container">
+                <!--social-icon-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-viadeo"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--footer-logo-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img alt="" class="img-responsive" src="assets/img/footer-logo.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-copright-->
+        <div class="footer-copright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-down">
+                            <p>© 2019 Tharanys. Tous droits réservés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--end-footer-copright-->
+    </footer>
+    <!--========================= END-FOOTER =============================-->
+
+
+    <!--script-links-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/tagsinput.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="assets/js/custom-js.js"></script>
+</body>
+</html>

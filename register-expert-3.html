@@ -1,0 +1,744 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="icon" href="assets/img/logo-icon.png" type="image/gif">
+
+    <title>CoachmeuUP | Register-expert</title>
+
+    <!--jquery.min-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--STYLE-SHEET-->
+    <link href="assets/stylesheet/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/stylesheet/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/stylesheet/animate.min.css" rel="stylesheet">
+    <link href="assets/stylesheet/bootstrap.min.css" rel="stylesheet">
+
+    <!--main-css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!--========================= HEADER =============================-->
+<header>
+    <!--top-head-section-->
+    <div class="resister-first">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="index.html">
+                    <div class="resister-logo">
+                        <img src="assets/img/logo2.png">
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <div class="roket-resister"><img src="assets/img/rocket2.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================= END-HEADER =============================-->
+<!--========================= inscriptionStartup =============================-->
+<div class="inscriptionStartup">
+    <div class="container">
+        <div class="inscription-content">
+            <h3>Inscription Expert</h3>
+            <p>Coachme_up va vous permettre de mettre votre réseau , vos conseils et votre expérience au service des
+                start up.<br>
+                <strong>Comment ?</strong> ...en contactant des start-up qui travaillent sur un sujet qui vous
+                passionne. En proposant votre expérience à des start-up ou jeune dirigeant. En accompagnant des start-up
+                comme advisor. Grace à vous ces jeunes poussent pourront peut être aller au bout de leur projet.
+                Inscrivez vous et nous vous guiderons sur la façon de faire bénéficier de votre réseau au plus grand
+                nombre
+            </p>
+        </div>
+    </div>
+</div>
+<div class="border-pic"></div>
+<!--========================= inscriptionStartup =============================-->
+
+<!--========================= resister-field =============================-->
+<div class="resister-field-startup">
+    <div class="resister-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="right-numbring-page">
+                        <div class="inside-etape">
+                            <span>ÉTAPE</span><br>
+                            2/<strong>3</strong>
+                        </div>
+                    </div>
+                    <div class="champs-etape">* champs obligatoire</div>
+                </div>
+                <div class="col-md-7">
+                    <div class="field-input">
+                        <div class="form-sec">
+                            <form name="qryform" id="qryform" method="post" action="mail.php"
+                                  onsubmit="return(validate());"
+                                  novalidate="novalidate">
+                                <div class="form-group">
+                                    <label for="file" class="sr-only">File</label>
+                                    <div class="input-group">
+                                        <input type="text" name="filename" class="form-control"
+                                               placeholder="Photo de votre profil *" readonly>
+                                        <span class="input-group-btn">
+              <div class="btn btn-default  custom-file-uploader">
+                <input type="file" name="file"
+                >
+                PARCOURIR
+              </div>
+            </span>
+                                    </div>
+                                    <div class="merci-choisir">Merci de choisir une photo au minimum de 250 pixels et 5
+                                        MB max ( jpeg et png )
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="file" class="sr-only">File</label>
+                                    <div class="input-group">
+                                        <input type="text" name="filename" class="form-control"
+                                               placeholder="Logo de votre startup *" readonly>
+                                        <span class="input-group-btn">
+              <div class="btn btn-default  custom-file-uploader">
+                <input type="file" name="file"
+                >
+                PARCOURIR
+              </div>
+            </span>
+                                    </div>
+                                    <div class="merci-choisir">Merci de choisir une photo au minimum de 250 pixels et 5
+                                        MB max ( jpeg et png )
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Tags *" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <div class="choosePadding">
+                                        <div class="choose-partSelection" id="niveau-simpal">
+
+                                            <span>Expertises *</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="openSelction">sddssdfdsfd</div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="choosePadding">
+                                        <div class="choose-partSelection" id="niveau-simpal2">
+                                            <span>Quelles compétences recherchez-vous ? *</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="openSelction2">sddssdfdsfd</div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="choosePadding">
+                                        <span>Souhaitez-vous proposer votre expertise à d’autres startups ? *</span>
+                                        <!--<input type="text" class="form-control" id="name" placeholder="Souhaitez-vous proposer votre expertise à d’autres startups ? *" name="name">-->
+                                        <div class="merci-choisir custom-check">
+                                            <div class="form-check">
+                                                <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox"
+                                                       value="value1">
+                                                <label for="styled-checkbox-1">Oui</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-2">Non</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="choosePadding">
+                                        <span>Souhaitez-vous proposer votre expertise à d’autres startups ? *</span>
+                                        <!--<input type="text" class="form-control" id="name" placeholder="Souhaitez-vous proposer votre expertise à d’autres startups ? *" name="name">-->
+                                        <div class="merci-choisir custom-check">
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox"
+                                                       value="value1">
+                                                <label for="styled-checkbox-3">Inbound marketing</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-4">Inbound marketing</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-5">Inbound marketing</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-6">Social media</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-7">Social media</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-8" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-8">Social media</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-9">Brand management</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-10">Brand management</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-11">Inbound marketing</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-12" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-12">Inbound marketing</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-13" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-13">Inbound marketing</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-14" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-14">Inbound marketing</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-15" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-15">Social media</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-16" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-16">Social media</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-17" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-17">Social media</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-18" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-18">Brand management</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-19" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-19">Brand management</label>
+                                            </div>
+                                            <div class="form-check right-check-box">
+                                                <input class="styled-checkbox" id="styled-checkbox-20" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-20">Brand management</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group effectifSelection">
+                                    <select>
+                                        <option>Comment souhaitez-vous proposer votre expertise ? *</option>
+                                        <option>Register-startup</option>
+                                        <option>Register-startup</option>
+                                        <option>Register-startup</option>
+                                        <option>Register-startup</option>
+
+
+                                    </select>
+                                </div>
+                                <div class="form-group effectifSelection">
+                                    <select>
+                                        <option>Combien de temps consacririez-vous par semaine ?</option>
+                                        <option>30 min</option>
+                                        <option>1 hour</option>
+                                        <option>1 hour 30 min</option>
+                                        <option>2 hour</option>
+                                        <option>2 hour 30 min</option>
+                                        <option>3 hour</option>
+                                        <option>3 hour 30 min</option>
+                                        <option>4 hour</option>
+                                        <option>4 hour 30 min</option>
+                                        <option>5 hour</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="choosePadding">
+                                        <span>Seriez vous prêt à faire des sessions à distance en visio-conference ? *</span>
+                                        <!--<input type="text" class="form-control" id="name" placeholder="Souhaitez-vous proposer votre expertise à d’autres startups ? *" name="name">-->
+                                        <div class="merci-choisir custom-check">
+                                            <div class="form-check">
+                                                <input class="styled-checkbox" id="styled-checkbox-21" type="checkbox"
+                                                       value="value1">
+                                                <label for="styled-checkbox-21">Oui</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="styled-checkbox" id="styled-checkbox-22" type="checkbox"
+                                                       value="value2">
+                                                <label for="styled-checkbox-22">Non</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group effectifSelection">
+                                    <select>
+                                        <option>Combien de kilomètre seriez-vous prêt à vous deplacer ? *</option>
+                                        <option>50 km</option>
+                                        <option>100 km</option>
+                                        <option>200 km</option>
+                                        <option>300 km</option>
+                                        <option>400 km</option>
+                                        <option>500 km</option>
+                                        <option>500+ km</option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="choosePadding">
+                                        <span>Seriez vous prêt à faire des sessions à distance en visio-conference ? *</span>
+                                        <div class="startup-check-valu">
+                                            <div class="col-md-3 ">
+                                                <span>LUNDI</span>
+                                                <div class="border-check">
+                                                    <div class="merci-choisir custom-check">
+                                                        <div class="disponibilites-check">
+                                                            <div class="form-check disponibilites">
+
+                                                                <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                                                                <label for="fruit1">MATIN</label>
+                                                            </div>
+                                                            <div class="form-check disponibilites border-shap">
+
+                                                                <input type="checkbox" id="fruit2" name="fruit-2" value="Apple">
+                                                                <label for="fruit2">APRÉS MIDI</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 ">
+                                                <span>MARDI</span>
+                                                <div class="border-check">
+                                                    <div class="merci-choisir custom-check">
+                                                        <div class="disponibilites-check">
+                                                            <div class="form-check disponibilites">
+
+                                                                <input type="checkbox" id="fruit3" name="fruit-3" value="Apple">
+                                                                <label for="fruit3">MATIN</label>
+                                                            </div>
+                                                            <div class="form-check disponibilites border-shap">
+
+                                                                <input type="checkbox" id="fruit4" name="fruit-4" value="Apple">
+                                                                <label for="fruit4">APRÉS MIDI</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 ">
+                                                <span>MERCREDI</span>
+                                                <div class="border-check">
+                                                    <div class="merci-choisir custom-check">
+                                                        <div class="disponibilites-check">
+                                                            <div class="form-check disponibilites">
+
+                                                                <input type="checkbox" id="fruit5" name="fruit-5" value="Apple">
+                                                                <label for="fruit5">MATIN</label>
+                                                            </div>
+                                                            <div class="form-check disponibilites border-shap">
+
+                                                                <input type="checkbox" id="fruit6" name="fruit-6" value="Apple">
+                                                                <label for="fruit6">APRÉS MIDI</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3 ">
+                                                <span>JEUDI</span>
+                                                <div class="border-check">
+                                                    <div class="merci-choisir custom-check">
+                                                        <div class="disponibilites-check">
+                                                            <div class="form-check disponibilites">
+
+                                                                <input type="checkbox" id="fruit7" name="fruit-7" value="Apple">
+                                                                <label for="fruit7">MATIN</label>
+                                                            </div>
+                                                            <div class="form-check disponibilites border-shap">
+
+                                                                <input type="checkbox" id="fruit8" name="fruit-8" value="Apple">
+                                                                <label for="fruit8">APRÉS MIDI</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 ">
+                                                <span>VENDREDI</span>
+                                                <div class="border-check">
+                                                    <div class="merci-choisir custom-check">
+                                                        <div class="disponibilites-check">
+                                                            <div class="form-check disponibilites">
+
+                                                                <input type="checkbox" id="fruit9" name="fruit-9" value="Apple">
+                                                                <label for="fruit9">MATIN</label>
+                                                            </div>
+                                                            <div class="form-check disponibilites border-shap">
+
+                                                                <input type="checkbox" id="fruit10" name="fruit-10" value="Apple">
+                                                                <label for="fruit10">APRÉS MIDI</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 ">
+                                                <span>SAMEDI</span>
+                                                <div class="border-check">
+                                                    <div class="merci-choisir custom-check">
+                                                        <div class="disponibilites-check">
+                                                            <div class="form-check disponibilites">
+
+                                                                <input type="checkbox" id="fruit11" name="fruit-11" value="Apple">
+                                                                <label for="fruit11">MATIN</label>
+                                                            </div>
+                                                            <div class="form-check disponibilites border-shap">
+
+                                                                <input type="checkbox" id="fruit12" name="fruit-12" value="Apple">
+                                                                <label for="fruit12">APRÉS MIDI</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 ">
+                                                <span>DIMANCHE</span>
+                                                <div class="border-check">
+                                                    <div class="merci-choisir custom-check">
+                                                        <div class="disponibilites-check">
+                                                            <div class="form-check disponibilites">
+
+                                                                <input type="checkbox" id="fruit13" name="fruit-13" value="Apple">
+                                                                <label for="fruit13">MATIN</label>
+                                                            </div>
+                                                            <div class="form-check disponibilites border-shap">
+
+                                                                <input type="checkbox" id="fruit14" name="fruit-14" value="Apple">
+                                                                <label for="fruit14">APRÉS MIDI</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Facebook" placeholder="Lien de votre Facebook" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Linkedin" placeholder="Lien de votre Linkedin" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Twitter" placeholder="Lien de votre Twitter" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Instagram" placeholder="Lien de votre Instagram" name="name">
+                                </div>
+                                <div class="form-group lst">
+                                    <input type="text" class="form-control" id="Youtube" placeholder=" Lien de votre Youtube" name="name">
+                                </div>
+                                <div class="button-suivante">
+                                    <button type="submit" class="btn btn-default suivante">ÉTAPE SUIVANTE</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--========================= resister-field =============================-->
+
+<!--========================= FOOTER =============================-->
+<footer>
+    <!--footer-top-->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-heading-h3">
+                        <h3>Ils parlent de nous...</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!--patner-logo-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="patner-logo">
+                        <img alt="" class="img-responsive" src="assets/img/partner-logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end-footer-top-->
+
+    <!--footer-textCenter-->
+    <div class="footer-textCenter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Questions ? commentaires ? Contactez-nous</h3>
+                </div>
+            </div>
+        </div>
+    </div><!--end-footer-textCenter-->
+
+
+    <!--footer-menu-->
+    <div class="footer-menu">
+        <div class="container">
+            <!--social-icon-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-viadeo"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--footer-logo-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-logo">
+                        <img alt="" class="img-responsive" src="assets/img/footer-logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-copright-->
+    <div class="footer-copright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-down">
+                        <p>© 2019 Tharanys. Tous droits réservés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end-footer-copright-->
+</footer>
+<!--========================= END-FOOTER =============================-->
+
+
+<!--========================= MODALS =============================-->
+<!-- popSelection- modal -->
+<div class="modal fade" id="popSelection" role="dialog">
+    <div class="modal-dialog modal-popDialog">
+
+        <!-- Modal content-->
+        <div class="modal-content modal-popSelection">
+            <button class="close" data-dismiss="modal" type="button">&times;</button>
+            <h3>Choisissez votre type de profil</h3>
+
+
+            <div class="modal-body">
+                <ul class="row-ul">
+                    <li class="col-3">
+                        <div class="flip-card">
+                            <div class="box-select-front">
+                                <img alt="" class="img-responsive" src="assets/img/rocket.png">
+                                <p>Startup</p>
+                            </div>
+
+                            <div class="box-select-back">
+                                <h5>ucibus blandit massa at, egesta pulvinar turpis, sed ultricesurus olor sit amet,
+                                    consecadipiscing ullam quis ex loreorbi at est eu justo malesuada</h5>
+                                <a class="btn btn-submitOk" href="#">go</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-3">
+                        <div class="flip-card">
+                            <div class="box-select-front">
+                                <img alt="" class="img-responsive" src="assets/img/mission.png">
+                                <p>Expert</p>
+                            </div>
+
+                            <div class="box-select-back">
+                                <h5>ucibus blandit massa at, egesta pulvinar turpis, sed ultricesurus olor sit amet,
+                                    consecadipiscing ullam quis ex loreorbi at est eu justo malesuada</h5>
+                                <a class="btn btn-submitOk" href="#">go</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-3">
+                        <div class="flip-card">
+                            <div class="box-select-front">
+                                <img alt="" class="img-responsive" src="assets/img/Investisseur.png">
+                                <p>Investisseur</p>
+                            </div>
+
+                            <div class="box-select-back">
+                                <h5>ucibus blandit massa at, egesta pulvinar turpis, sed ultricesurus olor sit amet,
+                                    consecadipiscing ullam quis ex loreorbi at est eu justo malesuada</h5>
+                                <a class="btn btn-submitOk" href="#">go</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--========================= END-MODALS =============================-->
+
+
+<!--script-links-->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--custom-script-jquery-->
+<script src="assets/js/custom-js.js"></script>
+
+<script>
+    $(".toggle-password").click(function () {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+
+
+    });
+</script>
+<script>
+    $(function () {
+        $("#datepicker-13").datepicker();
+        $("#datepicker-13").datepicker("");
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#niveau-simpal").click(function () {
+            $(".openSelction").toggle();
+        });
+    });
+
+    $(document).ready(function () {
+        $("#niveau-simpal2").click(function () {
+            $(".openSelction2").toggle();
+        });
+    });
+</script>
+
+<script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+        "data|10-50": [{
+            name: function () {
+                return Random.name(true)
+            },
+            "id|+1": 1,
+            "disabled|1-2": true,
+            groupName: 'Group Name',
+            "groupId|1-4": 1,
+            "selected": false
+        }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+        data: json1.data,
+        limitCount: 40,
+        multipleMode: 'label',
+        choice: function () {
+            // console.log(arguments,this);
+        }
+    });
+
+    var json2 = Mock.mock({
+        "data|10000-10000": [{
+            name: function () {
+                return Random.name(true)
+            },
+            "id|+1": 1,
+            "disabled": false,
+            groupName: 'Group Name',
+            "groupId|1-4": 1,
+            "selected": false
+        }]
+    });
+
+    $('.dropdown-mul-2').dropdown({
+        limitCount: 5,
+        searchable: false
+    });
+
+    $('.dropdown-sin-1').dropdown({
+        readOnly: true,
+        input: '<input type="text" maxLength="20" placeholder="Search">'
+    });
+
+    $('.dropdown-sin-2').dropdown({
+        data: json2.data,
+        input: '<input type="text" maxLength="20" placeholder="Search">'
+    });
+</script>
+</body>
+</html>
