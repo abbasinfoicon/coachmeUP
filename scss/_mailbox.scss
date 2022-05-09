@@ -1,0 +1,345 @@
+//mailBox
+.mailBox {
+  padding: 27px 0;
+  @include full-width;
+
+  h1 {
+    font-size: 21.13px;
+    font-family: 'roboto_condensedregular', sans-serif;
+    color: $black;
+    text-transform: uppercase;
+    @include mq(min, 480) {
+      padding-top: 10px;
+    }
+  }
+
+  // col-xs-6
+  .col-xs-6 {
+    @include mq(max, 479) {
+      width: 100%;
+    }
+
+  }
+
+  //mailbox-right
+  .mailbox-right {
+    text-align: right;
+    font-family: 'roboto_condensedregular', sans-serif;
+    text-transform: uppercase;
+    font-size: 16.69px;
+
+    a {
+      color: #4c8aac;
+      border: 2px solid #4c8aac;
+      padding: 8px 24px;
+      display: inline-block;
+      @include transition(all 0.3s);
+
+      &:hover {
+        background: #4c8aac;
+        color: #fff;
+      }
+
+      &:active {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+      }
+    }
+
+    @include custom-max(479) {
+      text-align: center;
+    }
+  }
+}
+
+//border-pic
+.mailBoxborder.border-pic {
+  height: 8px;
+}
+
+//mailbox-field
+.mailbox-field {
+  @include full-width;
+  padding-top: 41px;
+}
+
+// mail-container
+.container.mail-container {
+  width: 900px;
+  @include mq(max, 900) {
+    width: 100%;
+    float: left;
+  }
+  @include custom-max(479) {
+    .resister-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// spot-dot-mail
+.spot-dot-mail {
+  width: 36px;
+  text-align: right;
+  padding-right: 7px;
+}
+
+// mailNotifiaction
+.mailNotifiaction {
+  @include full-width;
+  padding: 0 28px;
+  margin-bottom: 80px;
+  @include mq(max, 900) {
+    padding: 0px;
+  }
+
+  // pull-left
+  .media-left, .media > .pull-left {
+    padding-right: 18px;
+    padding-top: 3px;
+  }
+
+  // media-left
+  .media-body, .media-left {
+    border-bottom: 1px solid #f4f4f4;
+  }
+
+  // media
+  .media {
+    margin-bottom: 27px;
+    overflow: visible;
+    padding-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      border-bottom: none;
+    }
+
+    .media-body {
+      padding-bottom: 27px;
+      position: relative;
+      padding-right: 25px;
+
+      .media-heading {
+        font-size: 15.45px;
+        font-family: 'roboto_condensedregular', sans-serif;
+        color: #989898;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: 'roboto_condensedregular', sans-serif;
+        font-weight: 600;
+        color: $black;
+        display: none;
+        padding-right: 5px;
+        @include mq(max, 360) {
+          font-size: 16px;
+        }
+      }
+
+      p.normal-unreed {
+        font-weight: normal;
+      }
+
+      .clickbt {
+        cursor: pointer;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    img {
+      max-width: none;
+      @include custom-max(991) {
+        margin-left: 0;
+      }
+    }
+
+    .media-right {
+      vertical-align: top;
+      width: auto;
+      position: relative;
+      padding-top: 40px;
+      @include custom-max(991) {
+        padding-top: 2px;
+      }
+
+      .crossMail {
+        display: inline-block;
+        position: relative;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+
+        &:after {
+          position: absolute;
+          content: '';
+          background-image: url(../img/mailcroosbt.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          z-index: 99;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    }
+
+    .checkmail-box {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: $dyellow;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 25px;
+      @include custom-max(991) {
+        top: 2px;
+        bottom: auto;
+      }
+
+      &.grayBg {
+        background: $graydark;
+      }
+    }
+  }
+}
+
+// dropContent
+.dropContent {
+  padding-top: 34px;
+  display: none;
+  width: 100%;
+  float: left;
+  @include mq(max, 360) {
+    font-size: 14px;
+  }
+
+  .fileAttech {
+    padding: 18px 0 44px 34px;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 18px;
+    @include custom-max(767) {
+      margin-left: 0;
+    }
+    @include custom-max(555) {
+      padding: 18px 0 0 0;
+    }
+    @include custom-max(450) {
+      padding-left: 0;
+    }
+    .attech-file-input {
+      float: left;
+      margin-right: 44px;
+      font-size: 13px;
+      color: #666666;
+      @include custom-max(555) {
+        margin-right: 10px;
+      }
+
+      @include custom-max(500) {
+        float: none;
+        margin-bottom: 27px;
+      }
+      @include custom-max(320) {
+        margin-right: 0px;
+      }
+
+      &.pdfbg {
+        span {
+          background: #d11124;
+          margin-right: 14px;
+          padding: 6px 3px;
+          font-size: 11px;
+          @include custom-max(320) {
+            margin-right: 10px;
+          }
+
+        }
+      }
+      span {
+        background: #003d72;
+        margin-right: 9px;
+        color: $white;
+        padding: 6px 3px;
+        font-size: 11px;
+
+      }
+    }
+  }
+
+}
+
+// mailText
+.mailText {
+  width: 100%;
+
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 102px;
+    padding-left: 15px;
+    padding-top: 8px;
+    border: 1px solid #ececec;
+    outline: none;
+    @include custom-max(767) {
+      width: 100%;
+    }
+  }
+
+  // rightbtnTextarea
+  .rightbtnTextarea {
+    text-align: right;
+    margin-top: 2px;
+
+    img {
+      padding-right: 16px;
+      padding-left: 16px;
+      cursor: pointer;
+    }
+
+    .btn-default {
+      background: #464646;
+      color: $white;
+      font-size: 11.69px;
+      border-radius: 0;
+      outline: none;
+      border: none;
+      &:hover {
+        background: lighten(#464646, 5);
+      }
+      &:active {
+        background: lighten(#464646, 10);
+      }
+    }
+  }
+}
+
+// dropContent-dui
+.dropContent-dui {
+  line-height: 1.75;
+  margin-bottom: 17px;
+}
+
+// content-mail-media
+.content-mail-media {
+  width: 100%;
+  float: left;
+}
+
+// onelinetitle
+.onelinetitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

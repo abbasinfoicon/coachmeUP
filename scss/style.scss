@@ -1,0 +1,143 @@
+//import-style/font-cdn-link
+@import "variable";
+@import "mixin";
+//@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap";
+//@import "https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap";
+
+/*=====================================================================
+==========================   main-css-all-pages  =========================
+========================================================================*/
+
+body {
+  margin: 0;
+  padding: 0;
+  @include full-width;
+  @include roboto(regular400);
+  font-size: 15px;
+
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background: none;
+  }
+}
+
+.container{
+  @include mq(min, 1366){
+    width: 1321px;
+  }
+  @include mq(max, 992){
+    width: 100%;
+  }
+}
+
+a, a:hover, a:active, a:focus, a:link, a:visited {
+  text-decoration: none;
+  @include transition(.5s);
+}
+
+img{
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, li, ul {
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+}
+
+
+/*=====================================================================
+==========================   font-face  =========================
+========================================================================*/
+@font-face {
+  font-family: 'robotoblack';
+  src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+  url('../fonts/roboto-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+  url('../fonts/roboto-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+  url('../fonts/roboto-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+  url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+  url('../fonts/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*========================================================================================*/
+
+@font-face {
+  font-family: 'roboto_condensedbold';
+  src: url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+  url('../fonts/robotocondensed-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'roboto_condensedlight';
+  src: url('../fonts/robotocondensed-light-webfont.woff2') format('woff2'),
+  url('../fonts/robotocondensed-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'roboto_condensedregular';
+  src: url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+  url('../fonts/robotocondensed-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+//delete text
+del {
+  text-decoration: line-through;
+}
+
+@include scrollbars(10, $dyellow, $black);
+
+//import-scss
+@import "header-footer";
+@import "profil-logue";
+@import "home";
+@import "mailbox";
